@@ -237,7 +237,7 @@ def handle_user_input():
         st.session_state.messages.append({"role": "assistant", "content": final_response})
 
 # --- Main UI ---
-st.title("Agentic RAG Chat Flow")
+st.title("Self-Reflective RAG Chat Flow")
 st.markdown("---")
 
 # Document upload/processing section
@@ -272,7 +272,7 @@ with st.container():
 
 # Sidebar
 with st.sidebar:
-    st.header("Agentic RAG Chat Flow")
+    st.header("Self-Reflective RAG Chat Flow")
     if st.button("New Chat"):
         st.session_state.messages = []
         clear_chroma_data()
